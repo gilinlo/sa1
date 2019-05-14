@@ -39,4 +39,5 @@ public class IndexActivity  extends AppCompatActivity {
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
+
 }

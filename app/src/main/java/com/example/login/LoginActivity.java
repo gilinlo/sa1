@@ -83,13 +83,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
-        Button mEmailLogInButton = findViewById(R.id.email_login_button);
-
-        mEmailLogInButton.setOnClickListener(new View.OnClickListener() {
+        Button mEmailSignInButton = (Button) findViewById(R.id.email_login_button);
+        mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(); intent.setClass(LoginActivity.this, IndexActivity.class);
-                startActivity(intent);
+            public void onClick(View view) {
+                attemptLogin();
             }
         });
 
@@ -336,7 +334,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
 
             if (success) {
-                finish();
+                //finish();
+                Intent intent=new Intent();intent.setClass(LoginActivity.this,IndexActivity.class);
+                startActivity(intent);
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();
@@ -350,4 +350,5 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         }
     }
 }
+
 
