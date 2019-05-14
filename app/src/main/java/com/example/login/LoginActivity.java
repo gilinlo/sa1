@@ -335,6 +335,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
             if (success) {
                 //finish();
+                //在密碼登入的地方仍需修改
                 Intent intent=new Intent();intent.setClass(LoginActivity.this,IndexActivity.class);
                 startActivity(intent);
             } else {
