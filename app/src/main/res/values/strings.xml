@@ -14,4 +14,14 @@
         completions."
     </string>
     <string name="forgot_password">Forgot Password?</string>
+
+
+    <string name="rest_Username">User Name</string>
+    <string name="rest_Password">Password</string>
+    <string name="rest_Phone">Phone</string>
+    <string name="rest_Email">Email</string>
+    <string name="rest_Address">Address</string>
+    <string name="rest_Picture">Picture Upload</string>
+
+
 </resources>
