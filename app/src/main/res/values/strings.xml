@@ -19,4 +19,24 @@
     <string name="title_notifications">Notifications</string>
     <string name="search_restaurant">Restaurant</string>
     <string name="search_hint">收尋餐廳</string>
+
+
+    <string name="rest_Username">User Name</string>
+    <string name="rest_Password">Password</string>
+    <string name="rest_Phone">Phone</string>
+    <string name="rest_Email">Email</string>
+    <string name="rest_Address">Address</string>
+    <string name="rest_Picture">Picture Upload</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
 </resources>
