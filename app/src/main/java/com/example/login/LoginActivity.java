@@ -336,7 +336,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             if (success) {
                 //finish();
                 //在密碼登入的地方仍需修改
-                Intent intent=new Intent();intent.setClass(LoginActivity.this,IndexActivity.class);
+                Intent intent = new Intent();
+                intent.setClass(LoginActivity.this, IndexActivity.class);
                 startActivity(intent);
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
@@ -352,4 +353,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     }
 }
 
+/*  //Button 的連結，仍需修改，加入下列審核功能
+    Button mEmailLogInButton = findViewById(R.id.email_login_button);
 
+    mEmailLogInButton.setOnClickListener(new View.OnClickListener(){
+    @Override
+        public void onClick(View v){
+            Intent intent=new Intent();intent.setClass(LoginActivity.this,IndexActivity.class);
+            startActivity(intent);
+        }
+   });
+*/

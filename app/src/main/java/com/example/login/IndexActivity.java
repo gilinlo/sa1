@@ -25,6 +25,9 @@ public class IndexActivity  extends AppCompatActivity {
                 case R.id.navigation_notifications:
                     mTextMessage.setText(R.string.title_notifications);
                     return true;
+                case R.id.navigation_foodprint:
+                    mTextMessage.setText(R.string.title_foodprint);
+                    return true;
             }
             return false;
         }
