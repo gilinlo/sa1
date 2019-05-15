@@ -91,6 +91,23 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
+        Button mCreateResAccountsButton = findViewById(R.id.create_res_accounts);
+        mCreateResAccountsButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent=new Intent();intent.setClass(LoginActivity.this,rest_sign.class);
+                startActivity(intent);
+            }
+        });
+
+        Button mCreateUserAccountsButton = findViewById(R.id.create_user_accounts);
+        mCreateUserAccountsButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent=new Intent();intent.setClass(LoginActivity.this,rest_sign.class); //需修改
+                startActivity(intent);
+            }
+        });
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
     }
